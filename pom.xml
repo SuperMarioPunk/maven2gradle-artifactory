@@ -19,12 +19,12 @@
     <!-- <snapshotRepository>
         <id>snapshots</id>
         <name>LAPTOP-LAFQ684S-snapshots</name>
-        <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+        <url>http://awsusest1-prartelb-660570171.us-east-1.elb.amazonaws.com/artifactory/libs-snapshot-local</url>
     </snapshotRepository> -->
     <repository>
-        <id>gradle_repository</id>
-        <name>LAPTOP-LAFQ684S-gradle_repository</name>
-        <url>http://localhost:8081/artifactory/gradle_repository</url>
+        <id>transformacion-dev</id>
+        <name>LAPTOP-LAFQ684S-transformacion-dev</name>
+        <url>http://awsusest1-prartelb-660570171.us-east-1.elb.amazonaws.com/artifactory/transformacion-dev</url>
     </repository>
   </distributionManagement>
   <build>
@@ -69,11 +69,11 @@
                                 <timeoutSec>60</timeoutSec>
                             </artifactory>
                             <publisher>
-                                <contextUrl>http://localhost:8081/artifactory</contextUrl>
+                                <contextUrl>http://awsusest1-prartelb-660570171.us-east-1.elb.amazonaws.com/artifactory</contextUrl>
                                 <username>${username}</username>
                                 <password>${password}</password>
                                 <excludePatterns>*-tests.jar</excludePatterns>
-                                <repoKey>gradle_repository</repoKey>
+                                <repoKey>transformacion-dev</repoKey>
                                 <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
                             </publisher>
                             <buildInfo>

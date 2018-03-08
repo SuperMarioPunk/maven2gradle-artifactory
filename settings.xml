@@ -17,6 +17,11 @@
       <password>${security.getEscapedEncryptedPassword()!"AP51M7XMVn5A77faWPS5kkNa7m5"}</password>
       <id>gradle_repository</id>
     </server>
+    <server>
+      <username>${security.getCurrentUsername()}</username>
+      <password>${security.getEscapedEncryptedPassword()!"AP51M7XMVn5A77faWPS5kkNa7m5"}</password>
+      <id>transformacion-dev</id>
+    </server>
   </servers>
   <profiles>
     <profile>
@@ -43,6 +48,14 @@
           <name>libs-gradle_repository</name>
           <url>http://localhost:8081/artifactory/gradle_repository</url>
         </repository>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>transformacion-dev</id>
+          <name>transformacion-dev</name>
+          <url>http://awsusest1-prartelb-660570171.us-east-1.elb.amazonaws.com/artifactory/transformacion-dev</url>
+        </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
@@ -60,6 +73,14 @@
           <id>gradle_repository</id>
           <name>gradle_repository</name>
           <url>http://localhost:8081/artifactory/gradle_repository</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>transformacion-dev</id>
+          <name>transformacion-dev</name>
+          <url>http://awsusest1-prartelb-660570171.us-east-1.elb.amazonaws.com/artifactory/transformacion-dev</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
