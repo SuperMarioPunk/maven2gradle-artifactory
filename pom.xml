@@ -74,7 +74,7 @@
                                 <password>${password}</password>
                                 <excludePatterns>*-tests.jar</excludePatterns>
                                 <repoKey>transformacion-dev</repoKey>
-                                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                                <!-- <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey> -->
                             </publisher>
                             <buildInfo>
                                 <buildName>plugin-demo</buildName>

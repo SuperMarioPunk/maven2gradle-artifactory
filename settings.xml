@@ -2,7 +2,7 @@
 <settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
-    <server>
+<!--     <server>
       <username>${security.getCurrentUsername()}</username>
       <password>${security.getEscapedEncryptedPassword()!"AP51M7XMVn5A77faWPS5kkNa7m5"}</password>
       <id>central</id>
@@ -16,7 +16,7 @@
       <username>${security.getCurrentUsername()}</username>
       <password>${security.getEscapedEncryptedPassword()!"AP51M7XMVn5A77faWPS5kkNa7m5"}</password>
       <id>gradle_repository</id>
-    </server>
+    </server> -->
     <server>
       <username>${security.getCurrentUsername()}</username>
       <password>${security.getEscapedEncryptedPassword()!"APdCBFBdyp5LG49XVPsUJjb8ke"}</password>
@@ -26,7 +26,7 @@
   <profiles>
     <profile>
       <repositories>
-        <repository>
+<!--         <repository>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -47,7 +47,7 @@
           <id>gradle_repository</id>
           <name>libs-gradle_repository</name>
           <url>http://localhost:8081/artifactory/gradle_repository</url>
-        </repository>
+        </repository> -->
         <repository>
           <snapshots>
             <enabled>false</enabled>
@@ -58,7 +58,7 @@
         </repository>
       </repositories>
       <pluginRepositories>
-        <pluginRepository>
+      <!--   <pluginRepository>
           <snapshots>
             <enabled>false</enabled>
           </snapshots>
@@ -73,7 +73,7 @@
           <id>gradle_repository</id>
           <name>gradle_repository</name>
           <url>http://localhost:8081/artifactory/gradle_repository</url>
-        </pluginRepository>
+        </pluginRepository> -->
         <pluginRepository>
           <snapshots>
             <enabled>false</enabled>
@@ -82,12 +82,12 @@
           <name>transformacion-dev</name>
           <url>http://awsusest1-prartelb-660570171.us-east-1.elb.amazonaws.com/artifactory/transformacion-dev</url>
         </pluginRepository>
-        <pluginRepository>
+ <!--        <pluginRepository>
           <snapshots />
           <id>snapshots</id>
           <name>libs-snapshot</name>
           <url>http://localhost:8081/artifactory/libs-snapshot</url>
-        </pluginRepository>
+        </pluginRepository> -->
       </pluginRepositories>
       <id>artifactory</id>
     </profile>
